@@ -4,6 +4,7 @@ import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import Form from './pages/Form.jsx';
+import Blog from './pages/Blog.jsx';
 
 const Display = () => {
   return (
@@ -13,7 +14,7 @@ const Display = () => {
     <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/Form' element={<Form />}></Route>
-        
+        <Route path='/Blog' element={<Blog />}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>

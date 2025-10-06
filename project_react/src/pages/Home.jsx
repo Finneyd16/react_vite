@@ -1,12 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import Counters from './Counters.jsx';
+import Gallery from './Gallery.jsx';
+
+const Button = styled.button`
+  color: limegreen;
+  border: 2px solid limegreen;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 3px;
+
+  &:hover {
+    opacity: 0.9;
+}
+`;
 
 const Homes = () => {
   return (
     <>
     <div
         id="intro-example"
-        className="p-5 text-center bg-image"
+        className="mx-5 p-5 text-center bg-image"
         style={{
           backgroundImage: `url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp')`,
         }}
@@ -41,6 +57,16 @@ const Homes = () => {
           </div>
         </div>
       </div>
+      <Counters name="Ifeanyi Anene" email="Anene.ifeanyi@yahoo.com" phone="+2349025762574" address="Lagos, Nigeria magodo phase one" />
+       <Gallery />
+      
+                <div>
+                   <Button>Click me</Button>
+                   
+
+                </div>
+     
+        
       
     </>
   )
