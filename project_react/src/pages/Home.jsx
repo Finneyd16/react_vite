@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import Counters from './Counters.jsx';
-import Gallery from './Gallery.jsx';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Counters from "./Counters.jsx";
+import Gallery from "./Gallery.jsx";
 
 const Button = styled.button`
   color: limegreen;
@@ -14,13 +14,13 @@ const Button = styled.button`
 
   &:hover {
     opacity: 0.9;
-}
+  }
 `;
 
 const Homes = () => {
   return (
     <>
-    <div
+      <div
         id="intro-example"
         className="mx-5 p-5 text-center bg-image"
         style={{
@@ -57,19 +57,21 @@ const Homes = () => {
           </div>
         </div>
       </div>
-      <Counters name="Ifeanyi Anene" email="Anene.ifeanyi@yahoo.com" phone="+2349025762574" address="Lagos, Nigeria magodo phase one" />
-       <Gallery />
-      
-                <div>
-                   <Button>Click me</Button>
-                   
+      <Counters
+        name="Ifeanyi Anene"
+        email="Anene.ifeanyi@yahoo.com"
+        phone="+2349025762574"
+        address="Lagos, Nigeria magodo phase one"
+      />
+      <Gallery />
 
-                </div>
+      <div>
+        <Button>Click me</Button>
+      </div>
+
      
-        
-      
     </>
-  )
-}
+  );
+};
 
-export default Homes
+export default Homes;
